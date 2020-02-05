@@ -35,5 +35,5 @@ def run(songs)
   
 #  help
 #  list(songs)
-  play(songs)
+#  play(songs)
 end
