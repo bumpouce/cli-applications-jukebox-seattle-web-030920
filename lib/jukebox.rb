@@ -11,7 +11,6 @@ def play(songs)
   request_song = gets.strip
   
   songs.each_with_index do |song, index|
-#    title = song.split(" - ")[1]
     if (request_song.to_i == index + 1) || (request_song == song)
       return puts "Playing #{song}"
     end
