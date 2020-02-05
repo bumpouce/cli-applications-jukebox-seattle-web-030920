@@ -31,8 +31,8 @@ end
 
 
 def run(songs)
-  puts "Welcome to the jukebox!"
   puts "Please enter a command:"
+  cmd = gets.strip
   
   help
   list(songs)
