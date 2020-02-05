@@ -37,9 +37,9 @@ def run(songs)
   puts "Chose option: #{cmd}"
   
   while !(cmd == "exit" )
-    #help
-    #list(songs)
-    #play(songs)
+    help
+    list(songs)
+    play(songs)
     
     puts "Please enter a command:"
     cmd = gets.strip
