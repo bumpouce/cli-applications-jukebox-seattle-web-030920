@@ -34,12 +34,16 @@ def run(songs)
   puts "Please enter a command:"
   cmd = gets.strip
   
-  puts "Chose option: #{cmd}"
-  
   while !(cmd == "exit" )
-    help
-    list(songs)
-    play(songs)
+    if cmd == "help"
+      help
+    elsif cmd == "list"
+      list(songs)
+    elsif cmd == "play"
+      play(songs)
+    else
+      puts "Sorry, that's not a valid command!"
+    end
     
     puts "Please enter a command:"
     cmd = gets.strip
