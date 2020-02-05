@@ -24,5 +24,5 @@ def run(songs)
   puts "Please enter a command:"
   
 #  help
-  list(songs)
+#  list(songs)
 end
