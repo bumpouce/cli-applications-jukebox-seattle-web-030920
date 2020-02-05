@@ -9,10 +9,11 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   request_song = gets.strip
+  
   songs.each_with_index do |song, index|
-    title = song.split(" - ")[1]
-    if (request_song.to_i == index + 1) || (request_song == title) || (request_song == song)
-      return puts "Playing #{request_song}"
+#    title = song.split(" - ")[1]
+    if (request_song.to_i == index + 1) || (request_song == song)
+      return puts "Playing #{song}"
     end
   end
   return puts "Invalid input, please try again"
