@@ -12,10 +12,9 @@ def play(songs)
   
   songs.each_with_index do |song, index|
     if (request_song == song) || (request_song == index)
-      puts "Playing #{request_song}"
-    else
-      puts "Invalid input, please try again"
+      return puts "Playing #{request_song}"
     end
+    return puts "Invalid input, please try again"
   end
 end
 
