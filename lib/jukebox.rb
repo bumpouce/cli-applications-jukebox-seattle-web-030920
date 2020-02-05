@@ -13,7 +13,7 @@ def play(songs)
   songs.each_with_index do |song, index|
     title = song.split(" - ")[1]
     if (request_song.to_i == index + 1) || (request_song == title) || (request_song == song)
-      return puts "Playing #{title}"
+      return puts "Playing #{request_song}"
     end
   end
   return puts "Invalid input, please try again"
