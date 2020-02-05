@@ -7,6 +7,7 @@ def help
 end
 
 def play(request_song)
+  puts "Songs: #{songs}"
   songs.each_with_index do |song, index|
     title = song.split(" - ")[1]
     if (request_song.to_i == index + 1) || (request_song == title) || (request_song == song)
