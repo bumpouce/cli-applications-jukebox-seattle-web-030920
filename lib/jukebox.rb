@@ -34,8 +34,8 @@ def run(songs)
   puts "Welcome to the jukebox!"
   puts "Please enter a command:"
   
-#  help
-#  list(songs)
-#  play(songs)
+  help
+  list(songs)
+  play(songs)
   exit_jukebox
 end
