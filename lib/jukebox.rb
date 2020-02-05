@@ -11,7 +11,11 @@ def play(songs)
   request_song = gets.strip
   
   songs.each_with_index do |song, index|
-    if () || 
+    if (request_song == song) || (request_song == index)
+      puts "Playing #{request_song}"
+    else
+      puts "Invalid input, please try again"
+    end
 end
 
 def list(songs)
@@ -30,4 +34,5 @@ def run(songs)
   
 #  help
 #  list(songs)
+  play(songs)
 end
