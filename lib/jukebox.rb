@@ -36,7 +36,7 @@ def run(songs)
   
   puts "Chose option: #{cmd}"
   
-  while cmd  "exit" 
+  while !(cmd == "exit" )
     #help
     #list(songs)
     #play(songs)
