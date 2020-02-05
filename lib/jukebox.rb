@@ -6,10 +6,7 @@ def help
   puts "- exit : exits this program"
 end
 
-def play(songs)
-  puts "Please enter a song name or number:"
-  request_song = gets.strip
-  
+def play(request_song)
   songs.each_with_index do |song, index|
     title = song.split(" - ")[1]
     if (request_song.to_i == index + 1) || (request_song == title) || (request_song == song)
@@ -40,7 +37,9 @@ def run(songs)
     elsif cmd == "list"
       list(songs)
     elsif cmd == "play"
-      play(songs)
+      puts "Please enter a song name or number:"
+      request_song = gets.strip
+      play(request_song)
     else
       puts "Sorry, that's not a valid command!"
     end
