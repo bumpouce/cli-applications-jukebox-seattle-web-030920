@@ -34,6 +34,8 @@ def run(songs)
   puts "Please enter a command:"
   cmd = gets.strip
   
+  puts "Chose option: #{cmd}"
+  
   while cmd <> "exit" 
     #help
     #list(songs)
