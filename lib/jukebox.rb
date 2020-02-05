@@ -13,7 +13,7 @@ def play(songs)
   songs.each_with_index do |song, index|
     puts "Comparing #{request_song} with #{song}, and #{index}"
     title = song.split(" - ")
-    puts "Title: #{title}"
+    puts "Title: #{title[1]}"
     if (request_song.to_i == index + 1)
       return puts "Playing #{request_song}"
     end
