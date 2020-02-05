@@ -11,11 +11,9 @@ def play(songs)
   request_song = gets.strip
   
   songs.each_with_index do |song, index|
-    puts "Comparing #{request_song} with #{song}, and #{index}"
     title = song.split(" - ")[1]
-    puts "Title: #{title}"
-    if (request_song.to_i == index + 1)
-      return puts "Playing #{request_song}"
+    if (request_song.to_i == index + 1) || (request_song == title)
+      return puts "Playing #{title}"
     end
   end
   return puts "Invalid input, please try again"
