@@ -23,6 +23,6 @@ def run(songs)
   puts "Welcome to the jukebox!"
   puts "Please enter a command:"
   
-  help
-  
+#  help
+  list(songs)
 end
