@@ -15,8 +15,8 @@ def play(songs)
     if request_song.to_i == index +1
       return puts "Playing #{request_song}"
     end
-    return puts "Invalid input, please try again"
   end
+  return puts "Invalid input, please try again"
 end
 
 def list(songs)
